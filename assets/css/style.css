@@ -7,6 +7,23 @@ body {
   color: #272829;
 }
 
+::-webkit-scrollbar {
+  padding-left: 1vh;
+  width: 0.5vh; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1vh;
+  padding-left: 1vh;
+  background-color: #149ddd; /* Color of the scrollbar thumb */
+}
+
+  /* Hide the background behind the scrollbar */
+::-webkit-scrollbar-track {
+  padding-left: 1vh;
+  background: #040b14; /* No background color for the scrollbar track */
+}
+
 a {
   color: #149ddd;
   text-decoration: none;

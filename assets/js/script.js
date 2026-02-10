@@ -306,6 +306,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Keep-alive ping to your API
     function initKeepAlive() {
+fetch('https://api.pixelnomad.pro/api/v1/dev/ping', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ping: true })
+            }).catch(() => {
+                // Silently fail - this is just a keep-alive
+            });
         setInterval(() => {
             fetch('https://api.pixelnomad.pro/api/v1/dev/ping', {
                 method: 'POST',

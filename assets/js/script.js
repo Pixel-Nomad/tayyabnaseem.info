@@ -340,4 +340,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Debug: Check if skill bars are working
     console.log('Portfolio initialized successfully');
     console.log('Skill bars found:', document.querySelectorAll('.skill-bar').length);
-});
+});//

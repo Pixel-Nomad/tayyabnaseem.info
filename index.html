@@ -1,250 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab Naseem | Full-Stack Developer</title>
+    <meta name="description" content="Full-Stack MERN Developer specializing in Node.js, Discord.js, FiveM Development, and PHP Backend. Available for projects and full-time opportunities.">
+    <meta name="keywords" content="MERN Developer, Node.js, Discord.js, FiveM, PHP Developer, Full Stack Developer, Backend Developer">
+    
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Theme Variables -->
+    <style>
+        :root {
+            /* Light Mode Variables */
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #10b981;
+            --dark: #1f2937;
+            --dark-light: #374151;
+            --light: #f9fafb;
+            --text: #6b7280;
+            --text-light: #9ca3af;
+            --border: #e5e7eb;
+            --card-bg: #ffffff;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
 
-  <title>Tayyab Naseem</title>
-  <meta content="I am a Freelancer, and Available for projects or full-time job offers as an intern" name="description">
-  <meta content="Tayyab Naseem, Freelancer, Node.js Developer, Discord.js Developer, Discord Bot Developer, MERN Developer, MERN Stack Developer, FiveM Developer, PHP Backend Developer, Web Developer, QBCore Framework, Full Stack Developer, Karachi, Pakistan, Pixel Nomad, Website Development, E-commerce Development, Game Development, PHP Core Developer, Frontend Development, Backend Development, Website Design, Bug Fixing, Bootstrap, jQuery, MySQL, LUA, Git, GitHub, SQL Server, C#, ASP.Net, Mobile Responsive Design, Portfolio Website, Contact Form, Services Offering, Professional Experience, Resume, Web Development Services, Responsive Design, Custom Website Development, Website Bug Fixing, Freelance Web Developer, Web Design and Development, Experienced PHP Developer, FiveM Server Development, Web Development Portfolio, Karachi Freelancer, Experienced Game Developer, Website Maintenance Services, PHP Scripting, Web Development Expert, Creative Web Solutions, Professional Portfolio, Online Presence, Dynamic Website Development, Karachi Web Developer, Creative Digital Solutions, Affordable Web Development, Game Scripting, Website Development Consultation, Website Optimization, Custom Script Development, PHP Programming, Game Server Development, Web Project Management, Web Design Consultation, Web Development Solutions, Freelance Development Services, Digital Portfolio, Custom Code Solutions, UI/UX Design, Game Server Management, Website Troubleshooting, Web Application Development, Web Development Consultancy, Affordable Freelance Developer, PHP Development Services, Full Stack Development, Mobile-friendly Websites, Modern Website Solutions, Game Server Optimization, Web Development Collaboration, Creative Coding, PHP Script Optimization, Responsive Web Design, Website Security, Online Portfolio, Creative Coding Solutions, Dynamic Web Solutions, Experienced Freelance Developer, Game Development Consultation, Frontend and Backend Services, Website Development Expertise, PHP Development Consultation, Server-side Scripting, Custom Web Solutions, FiveM Scripting, Game Server Scripting, Discord Bot Development, Discord.js" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+        [data-theme="dark"] {
+            /* Dark Mode Variables */
+            --primary: #818cf8;
+            --primary-dark: #6366f1;
+            --secondary: #34d399;
+            --dark: #f9fafb;
+            --dark-light: #e5e7eb;
+            --light: #111827;
+            --text: #d1d5db;
+            --text-light: #9ca3af;
+            --border: #374151;
+            --card-bg: #1f2937;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Tayyab Naseem</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/profile.php?id=100007546037555" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/iamtayyabnaseem/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-          <a href="https://wa.me/923082838448" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/tayyab-naseem-303238193/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://discord.com/users/pixel.nomad" class="discord" target="_blank"><i class="bx bxl-discord"></i></a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Tayyab<span>.</span></a>
+            
+            <div class="theme-switcher">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
-      </div>
+    </nav>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Tayyab Naseem</h1>
-      <p>I'm <span class="typed" data-typed-items="Node.js App Developer, Discord.js Bot Developer, FiveM Script/Server Developer, PHP Backend Developer, LUA Developer, Freelancer"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hello!</p>
-          <p>My name is Tayyab Naseem. I am 23 years old and currently living in Karachi, Pakistan. I am a passionate Node.js App Developer, Discord.js Bot Developer, FiveM Developer, and PHP Developer.</p>
-          <p>I am also a student, currently learning React.js and exploring new frameworks.</p>
-          <p>People also know me as <b>Pixel Nomad</b>.</p>
-          <p>I love building powerful, scalable apps and bots, fixing bugs, and constantly learning new technologies.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h4>Hi, I'm</h4>
+                <h1>Tayyab Naseem</h1>
+                <h2>Full-Stack <span class="typed-text"></span></h2>
+                <p>I build robust applications, Discord bots, and FiveM frameworks with focus on performance and scalability.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Pixel-Nomad" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tayyab-naseem-303238193/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://discord.com/users/pixel.nomad" target="_blank"><i class="bi bi-discord"></i></a>
+                    <a href="https://wa.me/923082838448" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="image-wrapper">
+                    <img src="assets/img/profile-img.jpeg" alt="Tayyab Naseem">
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">LUA</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I have expertise in the following technologies...</p>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3>Full-Stack Developer & Backend Specialist</h3>
+                        <p>I'm a passionate developer specializing in full-stack MERN development, backend systems, and game server development. Currently pursuing Advanced Diploma in Software Engineering while freelancing.</p>
+                        <p>People also know me as <strong>Pixel Nomad</strong> in developer communities.</p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="label">Location:</span>
+                                <span class="value">Karachi, Pakistan</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email:</span>
+                                <span class="value">mr.tgamer247797704@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Phone:</span>
+                                <span class="value">+92 308 2838448</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Status:</span>
+                                <span class="value available">Available for projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>4+ Years</h3>
+                        <p>Development Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="bi bi-robot"></i>
+                        <h3>10+</h3>
+                        <p>Discord Bots Created</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="bi bi-server"></i>
+                        <h3>15+</h3>
+                        <p>FiveM Projects</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="bi bi-check-circle"></i>
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">Node.js <i class="val">80%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="80"></div></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Primary Technologies -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="bi bi-star-fill"></i> Primary Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">HTML5/CSS3</span>
+                        <span class="skill-tag">LUA</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                    </div>
+                </div>
+                
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="bi bi-gear-fill"></i> Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Discord.js</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Svelte</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">jQuery</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Utilities -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="bi bi-tools"></i> Tools & Utilities</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PM2</span>
+                        <span class="skill-tag">FFmpeg</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+                
+                <!-- Currently Learning -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="bi bi-lightbulb"></i> Currently Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Dart</span>
+                    </div>
+                </div>
             </div>
-            <div class="progress">
-              <span class="skill">Discord.js / Bot Development <i class="val">85%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="85"></div></div>
+            
+            <!-- Skill Bars -->
+            <div class="skill-bars" data-aos="fade-up">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Node.js / Express.js</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Discord.js / Bot Development</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>LUA (FiveM Development)</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 95%" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>PHP Backend</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MySQL</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Redis</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%" data-width="70%"></div>
+                    </div>
+                </div>
             </div>
-            <div class="progress">
-              <span class="skill">LUA (FiveM) <i class="val">95%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="95"></div></div>
+            
+            <!-- Other Skills -->
+            <div class="other-skills" data-aos="fade-up">
+                <h3 class="section-subtitle"><i class="bi bi-tools"></i> Other Skills & Tools</h3>
+                <div class="other-skills-grid">
+                    <div class="other-skill-item">
+                        <i class="bi bi-bootstrap"></i>
+                        <h4>Bootstrap</h4>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-code-slash"></i>
+                        <h4>jQuery</h4>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-plug"></i>
+                        <h4>REST APIs</h4>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-git"></i>
+                        <h4>Git/GitHub</h4>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-server"></i>
+                        <h4>PM2</h4>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-file-earmark-music"></i>
+                        <h4>FFmpeg</h4>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-hdd-stack"></i>
+                        <h4>Nginx</h4>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="other-skill-item">
+                        <i class="bi bi-database"></i>
+                        <h4>Redis</h4>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                </div>
             </div>
-            <div class="progress">
-              <span class="skill">PHP <i class="val">70%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="70"></div></div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">HTML / CSS <i class="val">85%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="85"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">JavaScript / jQuery <i class="val">90%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="90"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">MySQL <i class="val">75%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="75"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">React.js (Learning) <i class="val">40%</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" aria-valuenow="40"></div></div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title"><h2>Resume</h2></div>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Tayyab Naseem</h4>
-              <p><em>A motivated full-stack developer specialized in Node.js, Discord.js bots, FiveM scripting, and PHP backend. Always learning new technologies while working on creative, real-world projects.</em></p>
-              <ul>
-                <li>Near back side of PSO Pump, Clifton Block 8, Karachi 75600</li>
-                <li>+92 308 2838448</li>
-                <li>mr.tgamer247797704@gmail.com</li>
-              </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience & Education</h2>
+            
+            <div class="experience-timeline">
+                <!-- Work Experience -->
+                <div class="timeline-section" data-aos="fade-right">
+                    <h3><i class="bi bi-briefcase"></i> Work Experience</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h4>MERN Stack Developer</h4>
+                            <span class="timeline-date">2024 - Present</span>
+                        </div>
+                        <p>Learning & Freelancing</p>
+                        <ul>
+                            <li>Developed CRUD apps in MERN stack to increase knowledge</li>
+                            <li>Used Redis to optimize REST APIs performance</li>
+                            <li>Created GitHub notification bot using Express.js</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h4>Discord Bot Developer</h4>
+                            <span class="timeline-date">2021 - Present</span>
+                        </div>
+                        <p>Freelance</p>
+                        <ul>
+                            <li>Developed Music Bot using Discord.js and lavalink player</li>
+                            <li>Used OOP principles in JavaScript for community bots</li>
+                            <li>Created automation and moderation bots</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h4>FiveM Server/Script Developer</h4>
+                            <span class="timeline-date">2018 - 2023</span>
+                        </div>
+                        <p>Freelance</p>
+                        <ul>
+                            <li>Developed custom framework based on LUA and MySQL</li>
+                            <li>Helped community by solving bugs and optimizing servers</li>
+                            <li>Used Node.js to expand framework capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="timeline-section" data-aos="fade-left">
+                    <h3><i class="bi bi-mortarboard"></i> Education</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h4>Advanced Diploma in Software Engineering</h4>
+                            <span class="timeline-date">2022 - 2026</span>
+                        </div>
+                        <p>Aptech Learning Pakistan, Karachi</p>
+                        <p>Aptech Certified Computer Professional</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h4>Intermediate in Pre-Engineering</h4>
+                            <span class="timeline-date">2019 - 2021</span>
+                        </div>
+                        <p>Gulistan Shah Abdul Latif Higher Secondary School, Karachi</p>
+                    </div>
+                </div>
             </div>
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Advanced Diploma in Software Engineering</h4>
-              <h5>2022 - Present</h5>
-              <p><em>Aptech Learning Pakistan, Karachi</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Intermediate in Pre-Engineering</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>GSALB Higher Secondary, Karachi</em></p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>FiveM & Discord.js Developer</h4>
-              <h5>2018 - Present</h5>
-              <ul>
-                <li>Developed and optimized FiveM QBCore servers with custom LUA scripts.</li>
-                <li>Created over 10 advanced Discord bots (music, moderation, automation) with Discord.js.</li>
-                <li>Delivered 3 Core PHP projects (E-commerce, Hospital Management, Game Admin Panel).</li>
-                <li>Collaborated with multiple clients, providing full-stack solutions and bug fixes.</li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Here are the services I offer with complete dedication:</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-robot"></i></div>
-            <h4 class="title"><a href="">Discord Bot Development</a></h4>
-            <p class="description">I create powerful, scalable Discord bots using Discord.js, featuring music bots, moderation systems, automation tools, and more.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">QBCore Server / Scripts</a></h4>
-            <p class="description">Developing and optimizing FiveM QBCore scripts and custom servers with bug fixing and feature integration.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Web Development</a></h4>
-            <p class="description">Custom full-stack websites, Core PHP projects, and optimized web applications with modern design principles.</p>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-title"><h2>Contact</h2></div>
-        <div class="row" data-aos="fade-in">
-          <div class="d-flex align-items-stretch">
-            <div class="info">
-              <div class="address"><i class="bi bi-geo-alt"></i><h4>Location:</h4><p>Near back side of PSO Pump, Clifton Block 8, Karachi 75600</p></div>
-              <div class="email"><i class="bi bi-envelope"></i><h4>Email:</h4><p>mr.tgamer247797704@gmail.com</p></div>
-              <div class="phone"><i class="bi bi-phone"></i><h4>Call:</h4><p>+92 308 2838448</p></div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810.5002760915177!2d67.042290783037!3d24.829654731635756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33db58fc4bea9%3A0x36744ef308fd2b9d!2sPSO%20petrol%20n%20gasoline!5e0!3m2!1sen!2s!4v1703895489672!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-icon">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+                    <h3>Music Discord Bot</h3>
+                    <p>Feature-rich Discord music bot with playlist management, audio streaming, and queue controls using Node.js, Discord.js, and FFmpeg.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Discord.js</span>
+                        <span>FFmpeg</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+                    <h3>FiveM Roleplay Framework</h3>
+                    <p>Custom FiveM framework with player management, job systems, economy, and admin tools built with LUA and MySQL.</p>
+                    <div class="project-tech">
+                        <span>LUA</span>
+                        <span>MySQL</span>
+                        <span>FiveM</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="bi bi-shop"></i>
+                    </div>
+                    <h3>Plant Nest E-commerce</h3>
+                    <p>Full-featured e-commerce platform for plant enthusiasts with shopping cart, payment integration, and inventory system.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon">
+                        <i class="bi bi-hospital"></i>
+                    </div>
+                    <h3>Hospital Management System</h3>
+                    <p>Comprehensive system with patient records, appointment scheduling, billing, and staff management modules.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-icon">
+                        <i class="bi bi-bell"></i>
+                    </div>
+                    <h3>GitHub Notification Bot</h3>
+                    <p>Discord bot that notifies about GitHub repository activities using webhooks and Express.js.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Discord.js</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-icon">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <h3>Community Automation Bot</h3>
+                    <p>Multi-purpose Discord bot with moderation, automation, and utility features for gaming communities.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Discord.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <i class="bi bi-geo-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>D28/1, Block 8, Clifton, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="bi bi-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mr.tgamer247797704@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="bi bi-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+92 308 2838448</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="bi bi-clock"></i>
+                        <div>
+                            <h3>Availability</h3>
+                            <p>Available for freelance projects and full-time opportunities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/Pixel-Nomad" target="_blank" class="social-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tayyab-naseem-303238193/" target="_blank" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://discord.com/users/pixel.nomad" target="_blank" class="social-link">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                        <a href="https://wa.me/923082838448" target="_blank" class="social-link">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" class="php-email-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-messages">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>pixel.nomad</span></strong>
-      </div>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Tayyab<span>.</span></a>
+                <p>Full-Stack Developer specializing in Node.js, Discord.js, and FiveM Development</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Pixel-Nomad" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tayyab-naseem-303238193/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://discord.com/users/pixel.nomad" target="_blank"><i class="bi bi-discord"></i></a>
+                    <a href="https://wa.me/923082838448" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2026 Pixel Nomad. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
